@@ -67,17 +67,27 @@ function Register() {
                                                 <div className='col-md-6'>
                                                     <div className='mb-2 mt-3'>
 
-                                                        <div className="btn-group">
-                                                            <button type="button" className="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                Select Cources
+                                                        {/* <div className="btn-group">
+                                                            <button type="button" className="btn btn-warning dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Select Cources
                                                             </button>
                                                             <ul className="dropdown-menu">
+                                                                <li><p className="dropdown-item" hidden>Select Cources</p></li>
                                                                 <li><p className="dropdown-item">Java Full Stack</p></li>
                                                                 <li><p className="dropdown-item" >MERN</p></li>
                                                                 <li><p className="dropdown-item">Python</p></li>
                                                                 <li><p className="dropdown-item">.Net</p></li>
                                                             </ul>
-                                                        </div>
+                                                        </div> */}
+
+                                                        <select className="form-control btn btn-warning ">
+                                                            <option hidden className='dropdown-item'>Select Cources</option>
+                                                            <option className='dropdown-item' >Java Full Stack</option>
+                                                            <option className='dropdown-item' >MERN</option>
+                                                            <option className='dropdown-item' >Python</option>
+                                                            <option  className='dropdown-item'>.Net</option>
+                                                        </select>
+
                                                     </div>
                                                 </div>
 
@@ -95,12 +105,12 @@ function Register() {
                                                 </div>
                                                 <div className='col-md-12'>
                                                     <div className='mb-2 '>
-                                                    <label className="form-label">Address</label>
+                                                        <label className="form-label">Address</label>
 
-                                                        
-                                                            <textarea class="form-control" placeholder="Address"></textarea>
 
-                                                    
+                                                        <textarea class="form-control" placeholder="Address"></textarea>
+
+
                                                     </div>
                                                 </div>
 

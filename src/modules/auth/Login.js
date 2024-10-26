@@ -40,7 +40,7 @@ function Login() {
                                                     <div className='mb-2'>
                                                         <button className='btn btn-success'>Login</button>
                                                         <Link to={"register"} className='btn btn-warning ms-2'>Register</Link>
-                                                        <Link to={"applanding"} className='btn btn-danger ms-2'>Apps Landing Page</Link>
+                                                        <Link to={"applanding"} className='btn btn-danger ms-2 sm-mt-2'>Apps Landing Page</Link>
                                                     </div>
                                                 </div>
                                             </div>

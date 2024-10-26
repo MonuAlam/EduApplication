@@ -6,7 +6,7 @@ function ForgotPassword() {
     return (
         <Fragment>
             <div className='container-fluid bg-light' >
-                <div className='row justify-content-center' style={{ minHeight: "100vh" }}>
+                <div className='row justify-content-center' style={{ mdminHeight: "100vh" }}>
                     <div className='col-md-6  align-self-center ' style={{ width: "1000px" }}>
                         <div className='container-fluid' >
                             <div className='row  bg-warning' style={{ height: "400px" }}>

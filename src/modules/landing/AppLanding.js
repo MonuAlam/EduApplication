@@ -6,12 +6,12 @@ function AppLanding() {
         <Fragment>
             <div className='container-fluid'>
                 <div className='row justify-content-center' style={{ minHeight: "100vh" }}>
-                    <div className='col-md-12 align-self-center'>
-                        <div className='container '>
-                            <div className='row '>
-                                <div className='col-md-3 d-flex justify-content-center '>
+                    <div className='col-12 align-self-center'>
+                        <div className='container-fluid '>
+                            <div className='row'>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
                                                 <h5 className="card-title">Payment</h5>
@@ -19,9 +19,9 @@ function AppLanding() {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-md-3 d-flex justify-content-center '>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
                                                 <h5 className="card-title">Courses</h5>
@@ -29,19 +29,19 @@ function AppLanding() {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-md-3 d-flex justify-content-center '>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-center text-white">
-                                                <h5 className="card-title">Student Management</h5>
+                                                <h5 className="card-title">Fees</h5>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-md-3 d-flex justify-content-center '>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
                                                 <h5 className="card-title">Classes</h5>
@@ -50,48 +50,49 @@ function AppLanding() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className='row mt-5'>
-                            <div className='col-md-3 d-flex justify-content-center mt-5'>
-                            <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                            <div className='row '>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
+                                    <Link to={"paymentLanding"}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
-                                                <h5 className="card-title">Payment</h5>
+                                                <h5 className="card-title">Students Management</h5>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-md-3 d-flex justify-content-center mt-5'>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
-                                                <h5 className="card-title">Payment</h5>
+                                                <h5 className="card-title">Teachers Management</h5>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-md-3 d-flex justify-content-center mt-5'>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
-                                            <div className="card-body text-white">
-                                                <h5 className="card-title">Payment</h5>
+                                            <div className="card-body text-center text-white">
+                                                <h5 className="card-title">Student Management</h5>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-md-3 d-flex justify-content-center mt-5'>
+                                <div className='col-sm-3 mt-5 d-flex justify-content-center '>
                                     <Link to={"paymentLanding"}>
-                                        <div className="card shadow bg-warning h-100" style={{ width: "12rem", alignItems: "center" }}>
+                                        <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
-                                                <h5 className="card-title">Payment</h5>
+                                                <h5 className="card-title">Events</h5>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

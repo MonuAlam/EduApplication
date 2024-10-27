@@ -1,8 +1,11 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 function PaymentLanding() {
   return (
-    <div>PaymentLanding</div>
+    <div>PaymentLanding
+    <Outlet></Outlet>
+    </div>
   )
 }
 

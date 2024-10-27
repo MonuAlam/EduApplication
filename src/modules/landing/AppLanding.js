@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react'
 import Payment from "../../image/payment.png"
+import Courses from "../../image/cources.png"
+import Fees from "../../image/fees.png"
+import Classes from "../../image/classes.png"
 import { Link } from 'react-router-dom'
 function AppLanding() {
     return (
@@ -20,9 +23,9 @@ function AppLanding() {
                                     </Link>
                                 </div>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"courceLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
-                                            <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
+                                            <img src={Courses} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
                                                 <h5 className="card-title">Courses</h5>
                                             </div>
@@ -30,9 +33,9 @@ function AppLanding() {
                                     </Link>
                                 </div>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"feesLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
-                                            <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
+                                            <img src={Fees} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-center text-white">
                                                 <h5 className="card-title">Fees</h5>
                                             </div>
@@ -40,9 +43,9 @@ function AppLanding() {
                                     </Link>
                                 </div>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"classesLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
-                                            <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
+                                            <img src={Classes} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
                                                 <h5 className="card-title">Classes</h5>
                                             </div>
@@ -52,7 +55,7 @@ function AppLanding() {
                             </div>
                             <div className='row '>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"studentLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
@@ -62,7 +65,7 @@ function AppLanding() {
                                     </Link>
                                 </div>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"teacherLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
@@ -72,17 +75,17 @@ function AppLanding() {
                                     </Link>
                                 </div>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"notestLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-center text-white">
-                                                <h5 className="card-title">Student Management</h5>
+                                                <h5 className="card-title">Notes</h5>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
                                 <div className='col-sm-3 mt-5 d-flex justify-content-center '>
-                                    <Link to={"paymentLanding"}>
+                                    <Link to={"eventLanding"}>
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Payment} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">

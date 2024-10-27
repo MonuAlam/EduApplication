@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Outlet } from 'react-router-dom'
+import PaymentHeader from './PaymentHeader'
+import Footer from '../shares/Footer'
 
 function PaymentLanding() {
   return (
-    <div>PaymentLanding
-    <Outlet></Outlet>
-    </div>
+    <Fragment>
+        <PaymentHeader></PaymentHeader>
+        <div className='mainpayment'>
+        <Outlet></Outlet>
+
+        </div>
+        <Footer></Footer>
+    </Fragment>
+
   )
 }
 

@@ -2,3 +2,13 @@ option{
   background:#0dcaf0 !important;
 }
 
+.card{
+transition-duration: 300ms;
+}
+a{
+  text-decoration: none;
+}
+.card:hover{
+transform: scale(1.5,1.5);
+transition-duration: 300ms;
+}

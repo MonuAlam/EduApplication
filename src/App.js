@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from './modules/auth/Login';
 import Register from './modules/auth/Register';
 import ForgotPassword from './modules/auth/ForgotPassword';
+import AppLanding from './modules/landing/AppLanding';
 function App() {
   return (
 <BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
   <Route path='/*' element={<Login/>}></Route>
   <Route path='register' element={<Register/>}/>
   <Route path='forgotPassword' element={<ForgotPassword/>}/>
+  <Route path='applanding' element={<AppLanding/>}/>
 </Routes>
 </BrowserRouter>
   )

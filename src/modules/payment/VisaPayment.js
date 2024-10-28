@@ -27,15 +27,15 @@ function VisaPayment() {
           <div className="container-fluid">
             <div className="row">
 
-              <div className="col-md-4 text-center bg-warning align-self-center py-4">
-                <main className="form-signin w-100 m-auto">
+            <div className={`col-md-4 text-center bg-warning align-self-center py-4 ${isMobile ? 'mt-4' : 'mt-0'}`} style={{ maxWidth: "800px" }}>
+            <main className="form-signin w-100 m-auto">
                   <form>
                     <p className="">
                       <RiVisaFill style={{ height: "80px", width: "80px" }} />
                     </p>
                     <div className="form-floating ">
                       <input type="text" className="form-control" placeholder="Name" required />
-                      <label >Name</label>
+                      <label >Card Holder Name</label>
                     </div>
                     <div className="form-floating mt-2">
                       <input type="text" className="form-control"  placeholder="Card Number" required />
@@ -59,7 +59,8 @@ function VisaPayment() {
                   </form>
                 </main>
               </div>
-              <div className="col-md-8 bg-info text-center d-flex justify-content-center align-items-center">
+              {/* <div className="col-md-8 bg-info text-center d-flex justify-content-center align-items-center"> */}
+              <div className={`col-md-8 bg-info text-center d-flex justify-content-center align-items-center ${isMobile ? 'mt-4 mb-4' : 'mt-0'}`} >
                 {showQR && (
                   /* <p className='h2 text-success'>Paymet Succcessfull</p>  */
                   <img src={Visa} className="card-img-top w-50 h-40" alt="QR Code" />

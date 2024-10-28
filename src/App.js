@@ -11,6 +11,12 @@ import UpiPayment from './modules/payment/UpiPayment';
 import VisaPayment from './modules/payment/VisaPayment';
 import PaypalPayment from './modules/payment/PaypalPayment';
 import CashPayment from './modules/payment/CashPayment';
+import CourceLanding from './modules/cources/CourceLanding';
+import CourceHome from './modules/cources/CourceHome';
+import Development from './modules/cources/Development';
+import UIUX from './modules/cources/UIUX';
+import Maketing from './modules/cources/Maketing';
+import WebDesign from './modules/cources/WebDesign';
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +31,13 @@ function App() {
           <Route path='visapayment' element={<VisaPayment/>} />
           <Route path='paypalpayment' element={<PaypalPayment/>} />
           <Route path='cashpayment' element={<CashPayment/>} />
+        </Route>
+        <Route path='applanding/courceLanding' element={<CourceLanding/>}>
+          <Route path='' element={<CourceHome/>}/>
+          <Route path='webdesign' element={<WebDesign/>}/>
+          <Route path='development' element={<Development/>}/>
+          <Route path='uiux' element={<UIUX/>}/>
+          <Route path='marketing' element={<Maketing/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

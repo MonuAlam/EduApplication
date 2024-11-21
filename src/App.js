@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { lazy,Suspense } from 'react';
 import Login from './modules/auth/Login';
 import Register from './modules/auth/Register';
 import ForgotPassword from './modules/auth/ForgotPassword';
@@ -23,6 +24,15 @@ import OopsNotes from './modules/notes/OopsNotes';
 import JsNotes from './modules/notes/JsNotes';
 import PythonNotes from './modules/notes/PythonNotes';
 import JavaNotes from './modules/notes/JavaNotes';
+import ClassLanding from './modules/classes/ClassLanding';
+import ClassHome from './modules/classes/ClassHome';
+import DetailsPage from './modules/classes/DetailsPage';
+import Loader from './modules/shares/Loader';
+import FessLanding from './modules/fees/FessLanding';
+import FessHome from './modules/fees/FessHome';
+//import LazyClass from './modules/classes/LazyClass';
+
+const LazyClass=lazy(()=>import('./modules/classes/LazyClass'));
 function App() {
   return (
     <BrowserRouter>
@@ -51,8 +61,20 @@ function App() {
           <Route path='jsnotes' element={<JsNotes />} />
           <Route path='pythonnotes' element={<PythonNotes />} />
           <Route path='javanotes' element={<JavaNotes />} />
-
         </Route>
+
+        <Route path='applanding/classesLanding' element={<ClassLanding/>}>
+          <Route path='' element={<ClassHome/>}/>
+          <Route path='detailpage/:id' element={<DetailsPage/>}/>
+          <Route path='lazyclass' element={<Suspense fallback={<Loader/>}>
+            <LazyClass/>
+          </Suspense>}/>
+        </Route>
+        <Route path='applanding/feesLanding' element={<FessLanding/>}>
+          <Route path='' element={<FessHome/>}/>
+          
+        </Route>
+
       </Routes>
     </BrowserRouter>
   )

@@ -43,7 +43,7 @@ function AppLanding() {
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Fees} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-center text-white">
-                                                <h5 className="card-title">Fees</h5>
+                                                <h5 className="card-title">Fees Dashboard</h5>
                                             </div>
                                         </div>
                                     </Link>
@@ -53,7 +53,7 @@ function AppLanding() {
                                         <div className="card shadow bg-warning h-100" style={{ width: "18rem", alignItems: "center" }}>
                                             <img src={Classes} className="card-img-top mt-2 w-50 h-40" alt="..." />
                                             <div className="card-body text-white">
-                                                <h5 className="card-title">Classes</h5>
+                                                <h5 className="card-title">Classes / Products</h5>
                                             </div>
                                         </div>
                                     </Link>
